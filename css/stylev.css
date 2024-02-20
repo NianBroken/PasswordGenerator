@@ -1,0 +1,294 @@
+/* 自定义滚动条样式 */
+::-webkit-scrollbar {
+	/* 选择整体滚动条 */
+	width: 0px; /* 设置滚动条的宽度 */
+}
+
+::-webkit-scrollbar-track {
+	/* 选择滚动条背景 */
+	background: #f1f1f1; /* 设置滚动条背景颜色 */
+}
+
+::-webkit-scrollbar-thumb {
+	/* 选择滚动条手柄 */
+	background: #888; /* 设置滚动条手柄的颜色 */
+}
+
+::-webkit-scrollbar-thumb:hover {
+	/* 鼠标悬停时选择滚动条手柄 */
+	background: #555; /* 设置鼠标悬停时滚动条手柄的颜色 */
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	background: #333;
+}
+
+.container {
+	width: 900px;
+	margin: 15px auto;
+	padding: 50px 30px 10px 30px;
+	background: #ffffff;
+	line-height: 23px;
+	border: 1px solid #dfdfdf;
+	border-radius: 10px 10px;
+	overflow: hidden;
+}
+
+#Logo {
+	width: 80px;
+	float: left;
+}
+
+#LogoText {
+	width: 450px;
+	float: left;
+	padding: 16px;
+}
+
+#pgLength {
+	float: left;
+	width: 229px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	margin: 2px 0 0 4px;
+}
+
+#pgQuantity {
+	float: left;
+	width: 229px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	margin: 2px 0 0 4px;
+}
+
+.chboxl {
+	display: inline;
+	text-align: left;
+	float: left;
+	width: 220px;
+	margin: 0;
+	padding: 0;
+	height: 27px;
+}
+
+.chboxr {
+	display: inline;
+	text-align: left;
+	float: left;
+	width: 500px;
+	margin: 0;
+	padding: 0;
+	height: 27px;
+}
+
+.chboxr2 {
+	display: inline;
+	text-align: left;
+	float: left;
+	width: 550px;
+	margin: 0;
+	padding: 0;
+	min-height: 27px;
+	border: 1px solid #000;
+}
+
+#header {
+	width: 800px;
+	height: 70px;
+	float: left;
+	margin: 0 40px 20px 40px;
+	text-align: left;
+	padding: 10px 10px 3px 10px;
+	font-size: 28px;
+	border-bottom: 1px solid #dfdfdf;
+}
+
+#sec_options {
+	width: 750px;
+	float: left;
+	margin: 0 0 10px 0;
+	padding: 2px 100px 2px 50px;
+}
+
+#sec_btn {
+	width: 800px;
+	margin: 0 0 0 0;
+	text-align: left;
+	padding: 0px 50px 5px 50px;
+	float: left;
+}
+
+#sec_password {
+	width: 800px;
+	margin: 10px 0 0 0;
+	text-align: left;
+	padding: 0px 50px 10px 50px;
+	float: left;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	line-height: 27px;
+	text-indent: 0px;
+}
+
+#sec_btm {
+	float: left;
+	width: 800px;
+	/* height: 45px; */
+	margin: 0px 0 60px 0;
+	padding: 20px 50px 10px 50px;
+	text-align: center;
+}
+
+#sec_btm a,
+#sec_btm a:link,
+#sec_btm a:visited {
+	text-decoration: none;
+	color: #0e62e4;
+}
+
+#sec_btm a:hover {
+	text-decoration: underline;
+}
+
+.txt_options {
+	width: 270px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding: 0 0 0 5px;
+	letter-spacing: 2px;
+}
+
+.GenerateBtn {
+	margin: 0 5px 5px 220px;
+	padding: 0 15px 0 15px;
+	/*width: 150px;*/
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+}
+
+.ProxyBtn {
+	margin: 0 5px 5px 5px;
+	padding: 0 15px 0 15px;
+	/*width: 160px;*/
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+}
+
+.button {
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	-webkit-user-select: none; /* webkit (safari, chrome) browsers */
+	-moz-user-select: none; /* mozilla browsers */
+	-khtml-user-select: none; /* webkit (konqueror) browsers */
+	-ms-user-select: none; /* IE10+ */
+	user-select: none;
+
+	font-family: arial, sans-serif;
+	color: #555;
+	/*	text-shadow: 1px 1px 0px white;*/
+
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #eee 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #eee)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%, #eee 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%, #eee 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%, #eee 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f8f8f8',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #ffffff 0%, #eee 100%); /* W3C */
+
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+
+	-moz-box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.4);
+
+	border: 1px #f8f8f8 solid;
+}
+
+.button:hover {
+	border: 1px #dadada solid;
+}
+
+.GenerateBtn:active {
+	margin: 1px 4px 4px 221px;
+	/*
+	border: 1px #dadada solid;
+    -moz-box-shadow: 0 1px 4px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 4px 0px rgba(0,0,0,0.5);
+    box-shadow: 0 1px 4px 0px rgba(0,0,0,0.5);  	*/
+}
+
+.ProxyBtn:active {
+	margin: 1px 4px 4px 6px;
+}
+
+sup {
+	vertical-align: baseline;
+	position: relative;
+	top: -1.5em;
+	font-size: 10px;
+}
+
+#line_num {
+	float: left;
+	width: 46px;
+	min-height: 28px;
+	height: 100%;
+	background: #0971ad;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 14px;
+	line-height: 26px;
+	font-family: Courier New, Arial, Helvetica, sans-serif;
+	overflow: hidden;
+}
+
+.each_line {
+	float: left;
+	width: 40px;
+	padding: 0 6px 0 0;
+	margin: 0;
+	text-align: right;
+	font-size: 14px;
+	font-family: Courier New, Arial, Helvetica, sans-serif;
+}
+
+.txt_password {
+	float: left;
+	width: 497px;
+	height: 28px;
+	line-height: 26px;
+	font-family: Courier New, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #008040;
+	padding: 0 0 0 5px;
+	border: none;
+	overflow: auto;
+	outline: none;
+	resize: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	background-image: url(../img/bg6.png);
+	background-repeat: repeat;
+}
+
+.custom-tooltip {
+	position: absolute;
+	display: none;
+	margin-left: 5px;
+	padding: 5px 12px;
+	background-color: #000000df;
+	border-radius: 4px;
+	color: #fff;
+}

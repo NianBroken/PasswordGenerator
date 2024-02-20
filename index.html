@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>随机密码生成器</title>
+		<link href="./css/stylev.css" rel="stylesheet" type="text/css" />
+		<script src="./js/script.js"></script>
+		<meta name="description" content="Strong Password Generator to create secure passwords that are impossible to crack on your device without sending them across the Internet, and learn over 40 tricks to keep your passwords, accounts and documents safe." />
+		<meta name="keywords" content="Password Generator, Online Password Generator, Random Password Generator, Secure Password Generator, Create Password, Generate Password" />
+		<link rel="shortcut icon" href="./favicon.ico" />
+		<link rel="apple-touch-icon" href="./img/favicon.png" sizes="32x32" />
+	</head>
+	<body onload="OpenOptions();">
+		<div class="container">
+			<div id="header">
+				<div id="Logo"></div>
+				<div id="LogoText">随机密码生成器</div>
+			</div>
+			<div id="sec_options">
+				<div class="chboxl">密码长度：</div>
+				<div class="chboxr">
+					<select id="pgLength" onchange="SaveOptions(false);">
+						<optgroup label="Weak"></optgroup>
+						<optgroup label="Strong"></optgroup>
+					</select>
+				</div>
+				<div class="chboxl">包含数字：</div>
+				<div class="chboxr">
+					<label><input type="checkbox" name="Numbers" id="Numbers" onclick="SaveOptions( false );" />( 例如：123456 )</label>
+				</div>
+				<div class="chboxl">包含小写字母：</div>
+				<div class="chboxr">
+					<label><input type="checkbox" name="Lowercase" id="Lowercase" onclick="SaveOptions( false );" />( 例如：abcdefgh )</label>
+				</div>
+				<div class="chboxl">包含大写字母：</div>
+				<div class="chboxr">
+					<label><input type="checkbox" name="Uppercase" id="Uppercase" onclick="SaveOptions( false );" />( 例如：ABCDEFGH )</label>
+				</div>
+				<div class="chboxl">以字母开头：</div>
+				<div class="chboxr">
+					<label><input type="checkbox" name="BeginWithC" id="BeginWithC" onclick="SaveOptions( false );" />( 不以数字或符号开头 )</label>
+				</div>
+				<div class="chboxl">包含符号：</div>
+				<div class="chboxr">
+					<label><input type="checkbox" name="Symbols" id="Symbols" onclick="SaveOptions( false );" /></label>
+					<input name="CustomizeSymbols" id="CustomizeSymbols" type="text" size="75" value="!&quot;#$%&'()*+,-./:;<=>?@[\]^_`{|}~" class="txt_options" onkeyup="SaveOptions( false );" />
+				</div>
+				<div class="chboxl">没有相似的字符：</div>
+				<div class="chboxr">
+					<label><input type="checkbox" name="Nosimilar" id="Nosimilar" onclick="SaveOptions( false );" />( 不使用 i, l, 1, L, o, 0, O 等字符 )</label>
+				</div>
+				<div class="chboxl">没有重复的字符：</div>
+				<div class="chboxr">
+					<label><input type="checkbox" name="AllUniqueC" id="AllUniqueC" onclick="SaveOptions( false );" />( 不重复使用同一个字符 )</label>
+				</div>
+				<div class="chboxl">没有连续的字符：</div>
+				<div class="chboxr">
+					<label><input type="checkbox" name="NoSeqC" id="NoSeqC" onclick="SaveOptions( false );" />( 不使用例如 abc, 789 这样连续的字符 )</label>
+				</div>
+				<div class="chboxl">自动生成一次密码：</div>
+				<div class="chboxr">
+					<label><input type="checkbox" name="AutoMake" id="AutoMake" onclick="SaveOptions( false );" />( 打开此页面时自动生成密码 )</label>
+				</div>
+				<div class="chboxl">密码数量：</div>
+				<div class="chboxr">
+					<select id="pgQuantity" onclick="SaveOptions(false);"></select>
+				</div>
+				<div class="chboxl">保存我的配置：</div>
+				<div class="chboxr">
+					<label><input type="checkbox" name="SaveSettings" id="SaveSettings" onclick="SaveOptions( true );" />( 将上述所有设置保存在 Cookie 中 )</label>
+				</div>
+			</div>
+			<div id="sec_btn">
+				<div class="button GenerateBtn" onclick="doWork2();">生成( V2 )</div>
+				<div class="button ProxyBtn" onclick="doWork1();">生成( V1 )</div>
+				<div class="button ProxyBtn" id="CopyOne" onclick="OnCopy2();">复制第 1 行</div>
+				<div id="tooltip2" class="custom-tooltip">复制成功</div>
+				<div class="button ProxyBtn" onclick="OnCopy();">复制所有内容</div>
+				<div id="tooltip1" class="custom-tooltip">复制成功</div>
+			</div>
+			<!-- sec_btn -->
+			<div id="sec_password">
+				<div class="chboxl">您的新密码：</div>
+				<div class="chboxr2">
+					<div id="line_num"></div>
+					<textarea spellcheck="false" id="final_pass" class="txt_password" value="我们的新密码将显示在这里"></textarea>
+				</div>
+			</div>
+			<!-- sec_btm -->
+			<div style="clear: both"></div>
+		</div>
+	</body>
+</html>
