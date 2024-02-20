@@ -1,0 +1,226 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	background: #fff;
+}
+
+.container {
+	width: 280px;
+	height: auto;
+	margin: 0px auto;
+	padding: 5px 0px 5px 0px;
+	background: #fff;
+	line-height: 23px;
+}
+
+#Logo {
+	width: 32px;
+	float: left;
+	padding: 5px 0 0 0;
+}
+
+#LogoText {
+	width: 212px;
+	float: left;
+	padding: 8px;
+	font-size: 18px;
+}
+
+#pgLength {
+	float: left;
+	width: 70px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	margin: 0px 0 0 0px;
+	height: 22px;
+}
+
+.chboxl {
+	display: inline;
+	text-align: left;
+	float: left;
+	width: 250px;
+	margin: 0;
+	padding: 0;
+	height: 27px;
+}
+
+.chboxr {
+	display: inline;
+	text-align: left;
+	float: left;
+	width: 10px;
+	margin: 0;
+	padding: 0;
+	height: 27px;
+}
+
+.chboxl2 {
+	display: inline;
+	text-align: left;
+	float: left;
+	width: 200px;
+	margin: 0;
+	padding: 0;
+	height: 27px;
+}
+
+.chboxr2 {
+	display: inline;
+	text-align: left;
+	float: left;
+	width: 70px;
+	margin: 0;
+	padding: 0;
+	height: 27px;
+}
+
+.Phoneticl {
+	display: inline;
+	text-align: left;
+	float: left;
+	width: 220px;
+	height: 150px;
+}
+
+.Phoneticr {
+	display: inline;
+	text-align: left;
+	float: left;
+	width: 60px;
+	height: 150px;
+}
+
+#genbtn {
+	width: 125px;
+	height: 38px;
+	display: block;
+	color: #000000;
+	margin: 0 0 0 5px;
+	padding: 0 0 0 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	float: left;
+	border: 1px solid #dfdfdf;
+}
+
+#copybtn {
+	width: 125px;
+	height: 38px;
+	display: block;
+	color: #000000;
+	margin: 0 0 0 10px;
+	padding: 0 0 0 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	float: left;
+	border: 1px solid #dfdfdf;
+}
+
+#header {
+	width: 260px;
+	height: 40px;
+	float: left;
+	margin: 0 5px 10px 5px;
+	text-align: left;
+	padding: 5px 5px 3px 5px;
+	border-bottom: 1px solid #dfdfdf;
+}
+
+.ADMobile1 {
+	width: 260px;
+	min-height: 5px;
+	float: left;
+	margin: 0 5px 10px 5px;
+	text-align: left;
+	padding: 5px 5px 3px 5px;
+}
+
+.sec_blank {
+	float: left;
+	height: 1px;
+	width: 250px;
+	margin: 0 10px 0px 10px;
+	padding: 0px 5px 0px 5px;
+	/*	border-bottom:1px solid #dfdfdf;*/
+}
+
+#sec_options {
+	width: 270px;
+	float: left;
+	margin: 0 0 10px 0;
+	padding: 2px 5px 2px 5px;
+}
+
+#sec_pron {
+	width: 200px;
+	height: 150px;
+	float: left;
+	margin: 15px 0px 20px 0px;
+}
+
+#sec_btn {
+	width: 270px;
+	margin: 0 0 0 0;
+	text-align: left;
+	padding: 0px 5px 5px 5px;
+	float: left;
+}
+
+#sec_password {
+	width: 270px;
+	margin: 10px 0 0 0;
+	text-align: left;
+	padding: 0px 5px 10px 5px;
+	float: left;
+}
+
+#sec_tips {
+	width: 240px;
+	margin: 0 10px 0 10px;
+	float: left;
+	text-align: left;
+	margin: 30px 5px 0 5px;
+	padding: 20px 15px 20px 15px;
+	border: 1px solid #4b99ff;
+	background: #ebfaff;
+	border-radius: 5px 5px;
+	font-size: 16px;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	line-height: 27px;
+	text-indent: 0px;
+}
+
+#sec_btm {
+	font-size: 14px;
+	float: left;
+	width: 260px;
+	height: 30px;
+	margin: 0px 0 0 0;
+	padding: 20px 5px 10px 5px;
+	text-align: center;
+}
+
+#sec_btm a,
+a:link,
+a:visited {
+	text-decoration: none;
+	color: #0011ff;
+}
+
+#sec_btm a:hover {
+	color: #0077ff;
+}
+
+.txt_password {
+	width: 270px;
+	height: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #008040;
+	padding: 0 0 0 5px;
+}
