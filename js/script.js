@@ -11,7 +11,7 @@ var mobileRegex = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini
 // 检查用户代理字符串是否匹配手机设备
 if (mobileRegex.test(navigator.userAgent)) {
     // 如果是手机设备，则跳转到mobile路径
-    window.location.href = "/mobile";
+    window.location.href = "./mobile";
 }
 
 
