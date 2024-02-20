@@ -10,8 +10,14 @@ var mobileRegex = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini
 
 // 检查用户代理字符串是否匹配手机设备
 if (mobileRegex.test(navigator.userAgent)) {
-    // 如果是手机设备，则跳转到mobile路径
-    window.location.href = "./mobile";
+    // 获取当前页面的 URL
+    var currentUrl = window.location.href;
+    // 提取当前页面的域名
+    var currentOrigin = window.location.origin;
+    // 构建移动路径
+    var mobilePath = currentUrl + "/mobile/";
+    // 将页面重定向到移动路径
+    window.location.href = mobilePath;
 }
 
 
