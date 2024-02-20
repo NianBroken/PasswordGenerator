@@ -20,7 +20,6 @@ if (mobileRegex.test(navigator.userAgent)) {
     window.location.href = mobilePath;
 }
 
-
 function SelectAll(id) {
 	$(id).focus();
 	$(id).select();
